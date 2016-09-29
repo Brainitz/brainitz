@@ -6,6 +6,11 @@ app.config(function($routeProvider) {
         templateUrl: 'partials/portal.html',
         controller: 'LoginController'
       })
+      .when('/teacher', {
+        templateUrl: 'partials/teacher.html',
+        controller: 'TeacherController'
+
+      })
       .otherwise('/', {
         templateUrl: 'partials/portal.html',
         controller: 'LoginController'

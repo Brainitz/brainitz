@@ -13,8 +13,9 @@ app.controller('TeacherController', function ($scope) {
 
   videojs('vid1').ready(function () {
       this.on('timeupdate', function () {
-        var currentTime = Math.floor(this.currentTime());
-        console.log(Math.floor(currentTime));
+        // var currentTime = Math.floor(this.currentTime());
+        // console.log(Math.floor(currentTime));
+        console.log(currentTime("seconds"))
         if(currentTime === 3) {
           // playback = false;
           myPlayer.pause();
